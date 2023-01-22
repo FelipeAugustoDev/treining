@@ -36,7 +36,8 @@
         </section>
         <div class="last-div-esq">
             <section class="section-esq">
-
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eaque voluptates doloremque, adipisci corporis harum! Illum, numquam. Error veritatis quas fuga assumenda voluptatum vel ipsum nulla vitae ad hic! Est!</p>
+                <div class="claro"></div>
             </section>
         </div>
       </main>
@@ -55,6 +56,15 @@
         <section class="box-section-dir">
           <article>La Ciruela</article>
           <p>Soy el amor que</p>
+
+          <audio controls id="music" autoplay >
+            <source src="/LaCiruela/musik/Nico Play - La Ciruela (Official Audio).mp3" type="audio/mpeg">        
+            Your browser does not support the audio element.
+            </audio>
+            <p>Click the buttons to play or pause the music.</p>
+            <button onclick="play()" type="button">Play </button>
+            <button onclick="pause()" type="button">Pause</button>
+                                  
         </section>
       </div>
     </div>
@@ -63,4 +73,15 @@
     
   </div>
 </body>
+<script>
+  var myMusic= document.getElementById("music");
+
+  
+function play() {
+myMusic.play();
+}
+function pause() {
+myMusic.pause();
+}
+</script>
 </html>
