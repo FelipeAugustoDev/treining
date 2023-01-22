@@ -6,6 +6,8 @@ body{
 }
 .container{
   display: flex;
+  background-image: url(/LaCiruela/imagens/pra_criar_png2.jpg);
+  background-size: cover
 }
 .direita, .esquerda{
   background-color: ;
@@ -13,7 +15,7 @@ body{
   height: 100vh;
 }
 .direita{
-  background-color: rgba(90,90,90, 05);
+  background-color: rgba(90,90,90, .5);
 }
 .direita>.menu-dir{
   width: 100%;
@@ -47,6 +49,18 @@ body{
 .menu-esq{
   display: flex;
   justify-content: flex-start;
+  align-items: center;
+  background-color: rgb(23, 23, 23);
+  width: 100%;
+  height: 6vh;
 }
-
+.menu-esq>img{
+  width: 10%;
+  height: 100%;
+  margin-left: 10%;
+}
+.menu-esq>h1{
+  color: aliceblue;
+  padding-left: 5%;
+}
 
