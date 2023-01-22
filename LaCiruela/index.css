@@ -1,6 +1,9 @@
 *{
   margin: 0;
 }
+html{
+  overflow: hidden;
+}
 body{
   background-color: rgba(23,23,23, 0.5);
 }
@@ -10,13 +13,11 @@ body{
   background-size: cover
 }
 .direita, .esquerda{
-  background-color: ;
+  background-color: rgb(40, 40, 40, 0.9);
   width: 50%;
   height: 100vh;
 }
-.direita{
-  background-color: rgba(90,90,90, .5);
-}
+
 .direita>.menu-dir{
   width: 100%;
   height: 6vh;
@@ -55,7 +56,7 @@ body{
   height: 6vh;
 }
 .menu-esq>img{
-  width: 10%;
+  width: 9%;
   height: 100%;
   margin-left: 10%;
 }
@@ -63,4 +64,92 @@ body{
   color: aliceblue;
   padding-left: 5%;
 }
+.main-esquerda{    /*Contém o elemento abaixo da div esquerda*/
+  width: 100%;
+  height: 94vh;
 
+  display: block;    
+  justify-content: center;
+}
+.main-esquerda>.section-esquerda{
+  margin-top: 5%;
+  background-color: rgba(51, 51, 51, 0.5);
+  border-radius: 15px 15px 15px 15px;
+  width: 90%;
+  height: 40vh;
+  display: flex;
+}
+.main-esquerda>.section-esquerda:hover{
+  background-color: rgba(87, 87, 87, 0.5);
+}
+.main-esquerda>.section-esquerda>.esquerda-box-image-and-text-dir{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-esquerda>.section-esquerda>.esquerda-box-image-and-text-dir>img{
+  width: 80%;
+  height: 60%;
+}
+.main-esquerda>.section-esquerda>.texto-esquerda{
+  width: 60%;
+  overflow: hidden;
+  height:auto;
+  text-align: center;
+  text-align: center;
+}
+
+.main-esquerda>.section-esquerda>.texto-esquerda:hover{
+  overflow:auto;
+}
+.main-esquerda>.section-esquerda>.texto-esquerda>article>h1{
+  font-size: 20px;
+  color: rgb(194, 194, 194);
+  padding-top: 5px;
+}
+
+.main-esquerda>.section-esquerda>.texto-esquerda>article>p{
+  color: white;
+}
+
+.main-esquerda>.last-div-esq{
+  margin-top: 5%;
+ /* background-color: rgb(36, 9, 9);*/
+  height: 3vh;
+  width: 100%;
+  height: 41vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.main-esquerda>.last-div-esq>.section-esq{
+  background-color: rgba(211, 211, 211, 0.089);
+  width: 90%;
+  height: 45vh;
+  border-radius: 15px 15px 15px 15px ;
+}
+.main-esquerda>.last-div-esq>.section-esq:hover{
+  background-color: rgba(255, 255, 255, 0.096);
+}
+
+
+.direita{
+  background-color: rgba(44, 44, 44, 0.8);
+}
+.direita>.box-menu-dir{
+  width: 100%;
+  height: 94vh;
+  background-color: rgba(165, 189, 189, 0.5);
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+}
+.direita>.box-menu-dir>.box-section-dir{
+  background-color: rgba(63, 63, 63, 0.3);
+  width: 60%;
+  height: 30vh;
+  border-radius: 15px 0px 0px 15px;
+}
